@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27ca7616-5819-46fa-a4ff-b9a170da2ebf" name="PrzypadkiUzycia" linkedPackageId="99986d6c-ef70-41f5-9608-8bb5500c25a7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="27f85892-610c-45ac-8098-38127479f592">
+      <elementDefinition Id="f10bfae8-95c6-4952-b5f6-e8b383a07645" />
+      <body>Przypadki użycia dostępne dla użytkownika
+</body>
+    </comment>
+    <comment Id="87ca3a49-6488-4f18-9878-5f5d7820edfa">
+      <elementDefinition Id="1df1461b-171c-4272-af77-33a8e6d807ce" />
+      <body>Przypadki użycia dostępne dla pracownika</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4ae264ad-2340-46a3-8103-8ab0e017410e" name="Użytkownik" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d9f0f91f-344d-46f8-af65-762f2137a9e6" />
+        <targetEnds>
+          <association Id="c20184c7-bd3a-49af-aba9-64dc904de535" isDerived="false" sourceEndRoleName="Użytkownik" targetEndRoleName="Wylogowanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="31a51326-d489-4939-b452-08e3a9e98b80" LastKnownName="Logowanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa41fc65-0712-46f2-9d8c-ec6ea9ffa46a" name="Użytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="081cb46f-1d38-44b6-8669-bad0f44a6f60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c6f0d3c-638a-4c11-b4c6-3de0318b2fd3" name="Wylogowanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="533b685b-b216-41ce-bffa-78b396677df9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fac67b56-2988-42ce-a9ab-64115f22c510" />
+          </association>
+          <association Id="d762b54e-982e-4bf8-b8d9-3e5868b634a7" isDerived="false" sourceEndRoleName="Użytkownik" targetEndRoleName="Rejestracja" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ed1a4d76-bac1-41f4-99c9-dc5ef0a399cf" LastKnownName="Rejestracja" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58ea58e1-3d0b-4428-8ab8-e4bf7ea3e191" name="Użytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fc0ea4d3-a0a0-45c9-b926-078d0a082ed5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="646ea307-cdec-47f9-892f-907dcb539a1b" name="Rejestracja" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d95d632-c07d-42e1-abcd-ab82390d8d7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ba679d8-cca2-4f8c-803d-cc92ad3df3e9" />
+          </association>
+          <association Id="c9be9ec5-2f7e-4787-a600-10a499a3e6a7" isDerived="false" sourceEndRoleName="Użytkownik" targetEndRoleName="Wyszukiwanie pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" LastKnownName="Wyszukiwanie pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2011e7e6-c3b6-4da9-b570-eadb3dc26de9" name="Użytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="59b611b5-af59-40b0-9a0f-df147b8cdfe9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7ef109f-eb8f-41b7-b07b-cedb388ddbde" name="Wyszukiwanie pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0c1ce081-2f92-4fbb-b677-9a915db7a6bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4b2b70b-5e77-4a63-aa54-c9e03833bdb5" />
+          </association>
+          <association Id="5affe73e-6e96-4587-acf5-7cc0591c3892" isDerived="false" sourceEndRoleName="Użytkownik" targetEndRoleName="Rezerwacja pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="36d24499-4228-45aa-b666-d93d21cea2d8" LastKnownName="Rezerwacja pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4cee41b-ade3-4c1f-b5be-31d11dcc482c" name="Użytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee519aa8-b80c-44d3-965b-b4123ebf38ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4fa64ac-bd5c-4f1d-9800-e550d7ba1214" name="Rezerwacja pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ce8290b-8abf-4815-87be-e19cf945dac0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="af8bd2a4-ab65-4f23-9511-1e5903289589" />
+          </association>
+          <association Id="cfb547a7-7e66-4e12-85aa-b8ad29b28412" isDerived="false" sourceEndRoleName="Użytkownik" targetEndRoleName="Przeglądaj moje rezerwacje" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd37dfa6-a1dc-4f1f-946d-e3c1f02703b1" LastKnownName="Przeglądaj moje rezerwacje" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c699db3b-d1a0-46ef-ac26-d4be970b7637" name="Użytkownik" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d269b3da-6e06-445d-9f66-465297ad6aee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4daf678e-d053-4a98-88f3-88e87393217f" name="Przeglądaj moje rezerwacje" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="293122de-ffc3-42a7-94e9-66d254b364e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="97ba9e39-4bb5-461d-a7de-db9a523a14de" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" name="Wypożyczalnia" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bdc65fc4-4ef6-4fc6-aaaf-8a31bdcdfc86" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="ed1a4d76-bac1-41f4-99c9-dc5ef0a399cf" name="Rejestracja" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46542176-56ee-455b-b32e-61cafd47f41a" />
+        <additions>
+          <include Id="4402389e-fb90-4bbb-8411-7a0a0ce0c6fb">
+            <useCaseMoniker Id="2618cadd-9bc1-4093-abf5-38b3b2737974" LastKnownName="Podanie loginu" />
+            <elementDefinition Id="6983b97c-a6d9-42a4-903a-a9546e150bc0" />
+          </include>
+          <include Id="157b9ae5-30fa-4597-99f3-c13e0a05eb15">
+            <useCaseMoniker Id="e96789cc-3ade-4db6-b7c1-1600a534d889" LastKnownName="Podanie hasła" />
+            <elementDefinition Id="3f15c199-a8e4-45ac-9d5d-66b3a30650e0" />
+          </include>
+          <include Id="46cb973e-c4be-462c-a88b-eda7e6893886">
+            <useCaseMoniker Id="89a3826b-2dfa-43d3-915a-0670feab8c95" LastKnownName="Potwierdź hasło" />
+            <elementDefinition Id="dc749f24-67f8-4061-8950-ac2f3126bdf7" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="31a51326-d489-4939-b452-08e3a9e98b80" name="Logowanie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="873f4646-a8ee-4a82-af10-8d363db9de29" />
+        <additions>
+          <include Id="30d80f1b-ec5b-481a-b852-f7b2639c0e62">
+            <useCaseMoniker Id="2618cadd-9bc1-4093-abf5-38b3b2737974" LastKnownName="Podanie loginu" />
+            <elementDefinition Id="045861ae-9631-4cfd-9a3a-f419cb568b74" />
+          </include>
+          <include Id="7b3d05d6-1285-4120-ad5f-6b2e5b7b4cbf">
+            <useCaseMoniker Id="e96789cc-3ade-4db6-b7c1-1600a534d889" LastKnownName="Podanie hasła" />
+            <elementDefinition Id="57d56c75-69bb-48e8-a387-0d98e77e2dfd" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3df6a5fc-45bd-4791-aa7f-42f5b4046f4d" name="Wylogowanie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89072083-0dfd-47cd-a645-e3bec9685f6e" />
+        <extendedCases>
+          <extend Id="863cc375-8176-451d-b74c-3c2665ae7365">
+            <useCaseMoniker Id="31a51326-d489-4939-b452-08e3a9e98b80" LastKnownName="Logowanie" />
+            <elementDefinition Id="137d1071-0ac6-4fff-b84a-422e8cd9038c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2618cadd-9bc1-4093-abf5-38b3b2737974" name="Podanie loginu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eba64220-828b-46d4-9c2d-0091c4be0e41" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e96789cc-3ade-4db6-b7c1-1600a534d889" name="Podanie hasła" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d5adce1-5644-48fe-9a84-580769809e59" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5ba36943-21ab-4263-964d-cf8d85df0402" name="Pracownik wypożyczalni" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d586e758-ad20-4df3-a1b1-a000201452f4" />
+        <targetEnds>
+          <association Id="bef71f6f-1bd2-4544-b672-30ff44232e06" isDerived="false" sourceEndRoleName="Pracownik wypożyczalni" targetEndRoleName="Wylogowanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="31a51326-d489-4939-b452-08e3a9e98b80" LastKnownName="Logowanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b42b802-a621-400f-905c-8af29c65094b" name="Pracownik wypożyczalni" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35c6ab44-5988-4c8c-a0e1-05fc59e11d3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1115861-57f1-48d1-b700-ebf33e773cf1" name="Wylogowanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb58d385-f68a-4317-940d-fd48d6c59842" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6719016a-dd7b-411f-a8f8-6b168b69f883" />
+          </association>
+          <association Id="6ff53541-0813-41f7-95d2-0146753f4cb4" isDerived="false" sourceEndRoleName="Pracownik wypożyczalni" targetEndRoleName="Wyszukiwanie pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" LastKnownName="Wyszukiwanie pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e00d9adc-8f85-4a6a-9ac3-2e5647e85ebd" name="Pracownik wypożyczalni" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8449075f-cc68-4bfe-ac01-239bf3688de3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9d855b4-7e92-4375-986d-80a710ac1906" name="Wyszukiwanie pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9bfed583-a7d8-4583-b4af-dc7c25279733" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="63227488-b3cb-4d59-ab62-d767f46750b4" />
+          </association>
+          <association Id="95c0747e-a69b-4fa1-ac5e-22cea13bcd05" isDerived="false" sourceEndRoleName="Pracownik wypożyczalni" targetEndRoleName="Dodawanie pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8163146b-f37a-47f6-a061-673e132f6162" LastKnownName="Dodawanie pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2ea79ae-2cd2-444f-8833-a4b8b9b77133" name="Pracownik wypożyczalni" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a3ecbb3-b75b-4c7b-88a8-272bbfd8d8c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0cc2106-bd2c-454f-8c40-a83ba5f0e120" name="Dodawanie pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6e171674-fcf8-4d37-9403-30e34d6fa5f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9c54ada2-be7b-4629-975c-b71129625f28" />
+          </association>
+          <association Id="a14fba80-4999-46fb-ab77-e45abf91f00d" isDerived="false" sourceEndRoleName="Pracownik wypożyczalni" targetEndRoleName="Usuwanie pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcbf2cef-83ca-4229-bd20-aef3510b0ec3" LastKnownName="Usuwanie pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75a8c9e4-4365-4629-934a-33e798adfe45" name="Pracownik wypożyczalni" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c9aeb8a7-1a74-45ea-bf95-1afdc2640c87" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec4414b1-8042-4cf1-99d4-71b4b675c0c1" name="Usuwanie pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="69682925-9ee6-4a26-8e3c-7a9dffcc9b27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dba05328-9a2a-4175-b986-f3d89fc474c1" />
+          </association>
+          <association Id="c626622f-d06d-433c-be4b-5b8caf0ba800" isDerived="false" sourceEndRoleName="Pracownik wypożyczalni" targetEndRoleName="Edycja pojazdu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="916a4b1e-7498-4e1b-ab25-befcaab06606" LastKnownName="Edycja pojazdu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="46cc9feb-bcaf-46c0-ac66-382a1a23ec7e" name="Pracownik wypożyczalni" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a09ccdb-99b7-47e3-b74f-c24824848793" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9aa00b08-cc8f-40f6-b3e4-476157a10d94" name="Edycja pojazdu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2e3720ed-8100-4993-ae24-0e3b53381de7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="137433e0-bb4f-41bb-9a7e-28047e1a61d4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8163146b-f37a-47f6-a061-673e132f6162" name="Dodawanie pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d32f0cae-f84b-44b3-acfc-d0d35b4cba8f" />
+        <additions>
+          <include Id="4dcd53fa-77ff-448e-823f-5d1f747ce9b1">
+            <useCaseMoniker Id="8b65da0f-84d3-428d-b9bb-081733ce333a" LastKnownName="Podaj markę" />
+            <elementDefinition Id="27ffa098-db43-4b25-9ffa-b60267cbcf56" />
+          </include>
+          <include Id="09b3410a-bc5b-42e6-89fe-168747ebccc7">
+            <useCaseMoniker Id="caea7735-f428-4c86-aa1e-5fb93fceb05f" LastKnownName="Podaj model" />
+            <elementDefinition Id="16356bc4-cdd7-48c1-997d-b66194d76205" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="916a4b1e-7498-4e1b-ab25-befcaab06606" name="Edycja pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3e024e4-19f9-43c0-8ca8-5d1dc22de404" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" name="Wyszukiwanie pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="570c4fc3-dc85-4aa9-a78e-995b2c1fad76" />
+        <extendedCases>
+          <extend Id="bab95315-411b-42a9-a9cc-0e3202ada4cc">
+            <useCaseMoniker Id="916a4b1e-7498-4e1b-ab25-befcaab06606" LastKnownName="Edycja pojazdu" />
+            <elementDefinition Id="74df20cf-c4e3-44d2-88d2-06ae4e3c2bb8" />
+          </extend>
+          <extend Id="43d3b17a-d546-4486-8ec3-018c40f2622b">
+            <useCaseMoniker Id="fcbf2cef-83ca-4229-bd20-aef3510b0ec3" LastKnownName="Usuwanie pojazdu" />
+            <elementDefinition Id="dcb264bc-4428-40f4-b4d6-29cea025e68b" />
+          </extend>
+          <extend Id="808629ad-03a0-488a-a30d-eb60f91b71c6">
+            <useCaseMoniker Id="36d24499-4228-45aa-b666-d93d21cea2d8" LastKnownName="Rezerwacja pojazdu" />
+            <elementDefinition Id="c3956f1e-30ef-42dc-8f99-6e0c79eb372b" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fcbf2cef-83ca-4229-bd20-aef3510b0ec3" name="Usuwanie pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96bd99ae-2e52-442a-b107-b0c130241837" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="36d24499-4228-45aa-b666-d93d21cea2d8" name="Rezerwacja pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce523fc5-2f28-4725-a255-a25d172238df" />
+        <additions>
+          <include Id="0ba78c38-e906-443d-94f1-a2aa37bd7720">
+            <useCaseMoniker Id="b14e51f5-fc63-4cd9-95ef-6357f7a145d3" LastKnownName="Data początkowa rezerwacji" />
+            <elementDefinition Id="cf5e7444-e831-4752-b38b-976ab84ea3b1" />
+          </include>
+          <include Id="690336b2-9a27-46b2-a5e2-74793bdaafea">
+            <useCaseMoniker Id="037d799e-9190-44a6-80be-2c976a0902b3" LastKnownName="Data końcowa rezerwacji" />
+            <elementDefinition Id="479f84aa-08cf-4ba7-ae46-19ba1cc721e3" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="27d1108b-0ed9-4f05-aba8-39140703358b" name="Anulowanie rezerwacji pojazdu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70b95322-2fd8-4372-8b8c-7983ba8fcf34" />
+        <extendedCases>
+          <extend Id="b6e3768c-f7ad-49dd-a3a9-c0e211bea268">
+            <useCaseMoniker Id="fd37dfa6-a1dc-4f1f-946d-e3c1f02703b1" LastKnownName="Przeglądaj moje rezerwacje" />
+            <elementDefinition Id="4730deea-90e3-4f4f-8079-7a3844fd563d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="89a3826b-2dfa-43d3-915a-0670feab8c95" name="Potwierdź hasło" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="760b7a4f-2057-441f-ac56-1704c048fda0" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="63cc7848-91b3-4a3d-a646-8ed4e5c08d6e" name="wyszukaj po marce" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b080a51-08df-4c7f-94f9-3ca7a5a73fcd" />
+        <extendedCases>
+          <extend Id="e702faa6-34aa-4498-8293-97347e5aa302">
+            <useCaseMoniker Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" LastKnownName="Wyszukiwanie pojazdu" />
+            <elementDefinition Id="95577992-3b3e-4730-b3f8-2f2f297c2950" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="591ade70-0750-45e4-806a-dfe21e14290c" name="wyszukaj po modelu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63db5a11-733a-473f-b6c9-07b90de592ba" />
+        <extendedCases>
+          <extend Id="92661703-7a07-4595-98ee-89297dd4c006">
+            <useCaseMoniker Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" LastKnownName="Wyszukiwanie pojazdu" />
+            <elementDefinition Id="e9210c1f-4118-4fbf-abb3-0ecb875ce728" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e5abea4f-8cdd-469e-8b08-3443e33942ef" name="Wszystkie lub tylko wolne pojazdy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79fd5897-f085-4693-9a9d-d6947c280e3b" />
+        <extendedCases>
+          <extend Id="1d1d66a7-4b6a-425f-a2b8-a5313d69b70d">
+            <useCaseMoniker Id="b40f4c48-d87a-4c9a-bbbd-ef791413c52d" LastKnownName="Wyszukiwanie pojazdu" />
+            <elementDefinition Id="a12de058-d914-4042-b937-ef2a638f03e5" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b14e51f5-fc63-4cd9-95ef-6357f7a145d3" name="Data początkowa rezerwacji" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea230c06-a1d4-4ccc-9ca9-d76310a5c89d" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="037d799e-9190-44a6-80be-2c976a0902b3" name="Data końcowa rezerwacji" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ab76cc38-8756-41ac-b5de-869c119ad981" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fd37dfa6-a1dc-4f1f-946d-e3c1f02703b1" name="Przeglądaj moje rezerwacje" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa4011f4-49ed-44ec-a7e2-72aeb0e4a1cd" />
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bafc5e17-0083-41ae-aceb-a95c1b8a7f7c" name="Archiwalne rezerwacje (pokaż/nie pokazuj)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0355051-bcaa-4651-a343-4e0394769402" />
+        <extendedCases>
+          <extend Id="d9e7b36b-0dad-4e42-8494-dd4fe39e7242">
+            <useCaseMoniker Id="fd37dfa6-a1dc-4f1f-946d-e3c1f02703b1" LastKnownName="Przeglądaj moje rezerwacje" />
+            <elementDefinition Id="148f5e8b-ce3f-4dd6-b202-454237b0b6b5" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bc9a0d10-294d-415f-8da2-66ab5c5f9e9f" name="Zmień rezerwację" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd3dcfc2-77b6-4a24-a907-b8ac17d2851d" />
+        <extendedCases>
+          <extend Id="756f42b3-6b52-48cc-9cf8-2fed4de3b0a1">
+            <useCaseMoniker Id="fd37dfa6-a1dc-4f1f-946d-e3c1f02703b1" LastKnownName="Przeglądaj moje rezerwacje" />
+            <elementDefinition Id="37bbd9ef-3b49-461a-b21d-443d570e931a" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8b65da0f-84d3-428d-b9bb-081733ce333a" name="Podaj markę" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d913622-c22e-49c9-bd91-ec5cad1888fd" />
+        <extendedCases>
+          <extend Id="af3cf65b-0299-4e42-8d96-9e58ccee80ac">
+            <useCaseMoniker Id="916a4b1e-7498-4e1b-ab25-befcaab06606" LastKnownName="Edycja pojazdu" />
+            <elementDefinition Id="c2e7fce9-cdd0-4401-a4d3-1197f73e854d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="caea7735-f428-4c86-aa1e-5fb93fceb05f" name="Podaj model" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5b2e180-7f85-4e9c-9cc7-0e3e0a8fad65" />
+        <extendedCases>
+          <extend Id="8160b80a-edea-477a-9b65-fe672f003441">
+            <useCaseMoniker Id="916a4b1e-7498-4e1b-ab25-befcaab06606" LastKnownName="Edycja pojazdu" />
+            <elementDefinition Id="3297444d-d893-4821-aca1-6ba308965880" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5ce91c5f-217f-4b66-8e2a-dd5c6721616a" LastKnownName="Wypożyczalnia" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="99986d6c-ef70-41f5-9608-8bb5500c25a7" name="ProjektWypozyczalnia">
+    <elementDefinition Id="3eb8fb00-1346-431a-9181-3b013025091b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5d8d7157-316f-4c89-91e8-a01109a06d3e">
+        <profileInstance Id="0c18966c-a881-4e55-9c36-64f994c3376d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8712a503-d8e0-4142-b0f0-6e7f5d8b5855">
+        <profileInstance Id="476a2d5c-25ca-445b-8e36-747ae7f4fde4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
