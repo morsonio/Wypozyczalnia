@@ -1,0 +1,26 @@
+﻿<div class="panel panel-primary"
+     ng-controller="CarListCtrl as vm">
+    <div class="panel-heading"
+         style="font-size:large">
+        Lista Pojazdów
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Marka</td>
+                    <td>Model</td>
+                    <td>Dostępność</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="car in vm.cars">
+                    <td>{{car.carBrand}}</td>
+                    <td>{{car.carModel}}</td>
+                    <td>{{car.carAvailable}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
