@@ -3,24 +3,14 @@
     angular
         .module("carsManagement")
         .controller("CarListCtrl",
-                     CarListCtrl);
+                        ["carResource",
+                     CarListCtrl]);
 
-    function CarListCtrl() {
+    function CarListCtrl(carResource) {
         var vm = this;
 
-        vm.cars = [
-            {
-                "carId": 1,
-                "carBrand": "Opel",
-                "carModel": "Vectra",
-                "carAvailable": "true"
-            },
-            {
-                "carId": 2,
-                "carBrand": "Mazda",
-                "carModel": "6",
-                "carAvailable": "false"
-            }
-        ];
+        carResource.query(function(data) {
+            vm.cars = data;
+        });
     }
 }());

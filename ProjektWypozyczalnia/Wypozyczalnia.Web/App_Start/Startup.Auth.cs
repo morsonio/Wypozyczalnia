@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Wypozyczalnia.Web.Models;
+using Wypozyczalnia.Web.DataAccessLayer;
 
 namespace Wypozyczalnia.Web
 {

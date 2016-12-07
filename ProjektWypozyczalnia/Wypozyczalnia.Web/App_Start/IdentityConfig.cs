@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Wypozyczalnia.Web.Models;
+using Wypozyczalnia.Web.DataAccessLayer;
 
 namespace Wypozyczalnia.Web
 {
