@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wypożyczalnia</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wypożyczalnia</title>
+ 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<!--Z HEAD'A RACZEJ NIC NIE MUSISZ WRZUCAĆ-->
+
+<body class="navbar-default"><!--TO NIE JEST NAVBAR!! KLASA NAVBAR-DEFAULT JEST TU TYLKO DO ZMIANY KOLORU TŁA STRONY.-->
+
+<!--NAVBAR-->
+    <nav class="navbar navbar-inverse">
+  <div class="">
+    <div class="navbar-header"><!--TO JEST DO ROZWIJANIA PRZY MNIEJSZYCH EKRANACH -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!--LEWE MENU powinno pojawiać się tylko po zalogowaniu-->
+      <ul class="nav navbar-nav">
+        <li><a href="#">Dodaj samochód</a></li>
+        <li><a href="#">Wybierz samochód</a></li> 
+        <li><a href="#">Pokaż moje rezerwacje</a></li>        
+      </ul>
+      <ul class="nav navbar-nav navbar-right"> <!--PRAWE MENU-->
+        <li><a href="#">Logowanie</a></li>
+        <li><a href="#">Rejestracja</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!--FORMULARZ LOGOWANIA-->
+<div id="login"><form class="col-xs-3 col-xs-offset-4 ">
+  <div class="form-group">
+    <h1>Logowanie</h1><br>
+    <label for="exampleInputEmailLogIn">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hasło</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
+  </div>
+  <button type="submit" class="btn btn-warning col-xs-12">Zaloguj</button>
+</form></div>
+
+
+
+  <!--FORMULARZ REJESTRACJI-->
+  <div id="registration"><form class="col-xs-3 col-xs-offset-4">
+  <div class="form-group">
+    <h1>Rejestracja</h1><br>
+    <label for="exampleInputEmail2">Podaj email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPasswordAdd">Podaj hasło</label>
+    <input type="password" class="form-control" id="exampleInputPasswordAdd" placeholder="Hasło">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPasswordConfirm">Potwierdź hasło</label>
+    <input type="password" class="form-control" id="exampleInputPasswordConfirm" placeholder="Potwierdź hasło">
+  </div>
+  <button type="submit" class="btn btn-warning col-xs-12">Zarejestruj</button>
+</form></div>
+
+
+
+<!--WYBIERANIE SAMOCHODU-->
+<div id="car-select"><form class="col-xs-3 col-xs-offset-4">
+  <div class="form-group">
+    <h1>Wybierz samochód</h1><br>
+  <div class="form-group">
+    <label>Wybierz markę</label>
+    <select class="form-control">
+    <option ng-repeat="car in vm.cars">{{car.Brand}}</option>
+    </select>
+  </div>
+  </div>
+  <div class="form-group">
+    <label>Wybierz model</label>
+    <select class="form-control" placeholder="Wybierz">
+    <option ng-repeat="car in vm.cars">{{car.Model}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-warning col-xs-12">Wybierz</button>
+</form></div>
+
+
+  <!--FORMULARZ DODAWANIA SAMOCHODU-->
+  <div id="car-add"><form class="col-xs-3 col-xs-offset-4">
+  <div class="form-group">
+    <h1>Dodaj samochód</h1><br>
+    <label for="carBrand">Podaj markę</label>
+    <input type="text" class="form-control" id="carBrand" placeholder="Marka samochodu">
+  </div>
+  <div class="form-group">
+    <label for="carModel">Podaj model</label>
+    <input type="text" class="form-control" id="carModel" placeholder="Model samochodu">
+  </div>
+  <button type="submit" class="btn btn-warning col-xs-12" >Dodaj samochód</button>
+</form></div>
+
+
+<!--MOJE REZERWACJE-->
+  <div id="my-reservations"><form class="col-xs-6 col-xs-offset-3">
+    <h1>Twoje rezerwacje</h1><br>
+    <div class="panel " style="margin-bottom: 50px;">
+  <div class="panel-heading btn-warning"></div>
+  <table class="table table-hover"> 
+    <thead> 
+        <tr> 
+            <th>Marka</th> 
+            <th>Model</th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr ng-repeat="car in vm.cars"> 
+            <td>{{car.Brand}}</td> 
+            <td>{{car.Model}}</td> 
+        </tr> 
+    </tbody> 
+  </table>
+</div>
+</form>
+</div>
+
+
+<!--TO MASZ JUŻ PODPIĘTE W PROJEKCIE (PRZYNAJMNIEJ Z TEGO CO WIDZĘ, A MOGĘ WIDZIEĆ ŹLE)-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
