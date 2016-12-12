@@ -26,12 +26,12 @@
       </button>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!--LEWE MENU powinno pojawiać się tylko po zalogowaniu-->
-      <ul class="nav navbar-nav" ng-show="main.isLoggedIn">
+      <ul class="nav navbar-nav" ng-show="main.isLoggedIn()">
         <li><a href="#">Dodaj samochód</a></li>
         <li><a href="#">Wybierz samochód</a></li> 
         <li><a href="#">Pokaż moje rezerwacje</a></li>        
       </ul>
-      <ul class="nav navbar-nav navbar-right" ng-hide="main.isLoggedIn"> <!--PRAWE MENU-->
+      <ul class="nav navbar-nav navbar-right" ng-hide="main.isLoggedIn()"> <!--PRAWE MENU-->
         <li><a href="#">Logowanie</a></li>
         <li><a href="#">Rejestracja</a></li>
       </ul>
@@ -80,7 +80,7 @@
 
 
 <!--WYBIERANIE SAMOCHODU-->
-<div id="car-select" ng-if="main.isLoggedIn"><form class="col-xs-3 col-xs-offset-4">
+<div id="car-select" ng-if="main.isLoggedIn()"><form class="col-xs-3 col-xs-offset-4">
   <div class="form-group">
     <h1>Wybierz samochód</h1><br>
   <div class="form-group">
@@ -154,6 +154,7 @@
     <script src="common/common.services.js"></script>
     <script src="common/carResource.js"></script>
     <script src="app/userAccount.js"></script>
+    <script src="common/currentUser.js"></script>
     <!--Product Controllers-->
     <script src="app/cars/carListCtrl.js"></script>
     <script src="app/mainCtrl.js"></script>

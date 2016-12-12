@@ -6,12 +6,15 @@
         .controller("MainCtrl",
         [
             "userAccount",
+            "currentUser",
             MainCtrl
         ]);
 
-    function MainCtrl(userAccount) {
+    function MainCtrl(userAccount,currentUser) {
         var main = this;
-        main.isLoggedIn = false;
+        main.isLoggedIn = function() {
+            return currentUser.getProfile().isLoggedIn;
+        };
         main.message = "";
         main.userData = {
             userName: "",
@@ -26,14 +29,12 @@
 
             userAccount.login.loginUser(main.userData,
                 function(data) {
-                    main.isLoggedIn = true;
                     main.message = "";
                     main.password = "";
-                    main.token = data.access_token;
+                    currentUser.setProfile(main.userData.userName, data.access_token);
                 },
                 function(response) {
                     main.password = "";
-                    main.isLoggedIn = false;
                     main.message = response.statusText + "\r\n";
                     if (response.data.exceptionMessage) {
                         main.message += response.data.exceptionMessage;
