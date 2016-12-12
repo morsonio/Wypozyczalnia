@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Http.Cors;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -13,6 +14,7 @@ using Wypozyczalnia.Web.Models;
 namespace Wypozyczalnia.Web.Controllers
 {
     [Authorize]
+    [EnableCors("http://localhost:1901", "*", "*")]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
