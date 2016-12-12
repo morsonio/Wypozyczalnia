@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ProjektWypozyczalnia", "ProjektWypozyczalnia\ProjektWypozyczalnia.modelproj", "{13358ACE-D8C1-4865-80DD-51C971E5EF12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wypozyczalnia.Web", "Wypozyczalnia.Web\Wypozyczalnia.Web.csproj", "{A429723F-A177-4C91-9FE4-3FEE567C764A}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Wypozyczalnia.Client", "..\Wypozyczalnia.Client\", "{5F2949DC-B467-4023-BCF9-B135891FB36B}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
@@ -41,10 +39,6 @@ Global
 		{13358ACE-D8C1-4865-80DD-51C971E5EF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13358ACE-D8C1-4865-80DD-51C971E5EF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13358ACE-D8C1-4865-80DD-51C971E5EF12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A429723F-A177-4C91-9FE4-3FEE567C764A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A429723F-A177-4C91-9FE4-3FEE567C764A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A429723F-A177-4C91-9FE4-3FEE567C764A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A429723F-A177-4C91-9FE4-3FEE567C764A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F2949DC-B467-4023-BCF9-B135891FB36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F2949DC-B467-4023-BCF9-B135891FB36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F2949DC-B467-4023-BCF9-B135891FB36B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
