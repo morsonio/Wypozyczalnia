@@ -1,0 +1,23 @@
+﻿<!--MOJE REZERWACJE-->
+<div id="my-reservations">
+    <form class="col-xs-6 col-xs-offset-3">
+        <h1>Twoje rezerwacje</h1><br>
+        <div class="panel " style="margin-bottom: 50px;">
+            <div class="panel-heading btn-warning"></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Marka</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="car in vm.cars">
+                        <td>{{car.Brand}}</td>
+                        <td>{{car.Model}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>

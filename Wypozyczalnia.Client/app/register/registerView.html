@@ -1,0 +1,20 @@
+﻿ <!--FORMULARZ REJESTRACJI-->
+<div id="registration">
+    <form class="col-xs-3 col-xs-offset-4">
+        <div class="form-group">
+            <h1>Rejestracja</h1><br>
+            <label for="exampleInputEmail2">Podaj email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" ng-model="main.userData.email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPasswordAdd">Podaj hasło</label>
+            <input type="password" class="form-control" id="exampleInputPasswordAdd" placeholder="Hasło" ng-model="main.userData.password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPasswordConfirm">Potwierdź hasło</label>
+            <input type="password" class="form-control" id="exampleInputPasswordConfirm" placeholder="Potwierdź hasło" ng-model="main.userData.confirmPassword">
+        </div>
+        <button type="submit" class="btn btn-warning col-xs-12" ng-click="main.registerUser()">Zarejestruj</button>
+        <div ng-show="main.message">{{main.message}}</div>
+    </form>
+</div>

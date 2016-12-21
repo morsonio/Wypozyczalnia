@@ -1,0 +1,21 @@
+﻿<!--WYBIERANIE SAMOCHODU-->
+<div id="car-select" ng-if="main.isLoggedIn()">
+    <form class="col-xs-3 col-xs-offset-4">
+        <div class="form-group">
+            <h1>Wybierz samochód</h1><br>
+            <div class="form-group">
+                <label>Wybierz markę</label>
+                <select class="form-control">
+                    <option ng-repeat="car in vm.cars">{{car.Brand}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Wybierz model</label>
+            <select class="form-control" placeholder="Wybierz">
+                <option ng-repeat="car in vm.cars">{{car.Model}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-warning col-xs-12">Wybierz</button>
+    </form>
+</div>
